@@ -1,0 +1,104 @@
+/* pages/finish/finish.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-text {
+  color:black;
+  font-size:32px;
+  font-family: "微软雅黑";
+}
+
+.hinttext {
+  margin-top: 30rpx;
+  color:black;
+  font-size:24px;
+  font-family: "微软雅黑";
+}
+
+.inputinfo {
+  width: 100%;
+  flex-wrap:wrap;
+  display:flex;
+}
+
+.inputname{
+ width:320rpx;
+ height: 80rpx;
+ border: 2px solid red;
+ border-radius: 20px;
+ margin-left: 15px;
+ margin-right: 15px;
+ margin-top: 8px;
+ padding-left: 10px;
+ justify-content: space-around;
+}
+
+.btn-style {
+  height: 80rpx;
+  width: 250rpx;
+  margin-top: 20rpx;
+  font-family: "微软雅黑";
+  font-size:32rpx;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.table {  
+  border-radius: 2%;
+  border: 0px solid darkgray;
+  width:95%;
+  margin: 100rpx 5rpx 5rpx 5rpx; 
+  background: #EEECEF;  
+}
+
+.tr {  
+  display: flex;  
+  width: 100%;  
+  height: 2rem;  
+  align-items: center;
+  margin: 5rpx 5rpx 5rpx 5rpx;
+}
+
+.tdnumber {    
+  width:10%;    
+  justify-content: left;    
+  text-align: center;
+  font-family: "微软雅黑";
+}
+
+.td-userinfo-avatar { 
+  width:50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  border: 0 solid #E6F3F9;
+}
+.tdname {    
+  width:30%;    
+  justify-content: center;    
+  text-align: center;
+  font-family: "微软雅黑";
+  color: darkgrey; 
+}
+.tdtime {     
+  font-family: "微软雅黑"; 
+  width:30%;    
+  justify-content: center;    
+  text-align: right;
+}
+.tdsplit {
+  background: aquamarine;
+  height: 3rpx;
+  width: 100%;
+}

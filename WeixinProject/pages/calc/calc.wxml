@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <text class='text-timing'>{{time}} {{second}}</text>
+  <text class='text-desc'>第 {{numbercount}} 题</text>
+  <view bindtap="bindViewTap" class="userinfo">
+    <text>答对 {{rightcount}} 题，答错 {{wrongcount}} 题</text>    
+    <text class="userinfo-text">{{param1}}{{sign1}}{{param2}}{{sign2}}{{param3}}</text>
+    <input class="input-style" type="number" maxlength="10" placeholder="hurry up" focus="{{focus}}" value="{{resultedit}}" disabled="true" bindinput="bindKeyInput"></input>   
+</view>
+  <view class="usermotto">    
+    <button class="submit-button" bindtap="clickSubmit">答题</button> 
+    <view class="button-wrp" style="flex-direction:row">
+    <block wx:for="{{numberData}}">
+    <button class="number-button" id='{{item.id}}' bindtap="clickButton">
+    {{item.number}}</button>
+    </block>
+    <button class="number-button" bindtap="clickButton" id="back">back</button>
+    </view>
+  </view>
+  <button id="record" class="btn-record" bindtap="clickRecord">record</button> 
+</view>

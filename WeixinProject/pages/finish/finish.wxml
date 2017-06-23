@@ -1,0 +1,25 @@
+<!--pages/finish/finish.wxml-->
+<view class="container" style="background: #49474A; height: 100vh">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-text">{{timedisplay}}</text>
+    <text class="userinfo-text">做错 {{wrongcount}} 题，做对 {{rightcount}} 题</text>
+    <view class="inputinfo" style="flex-direction:row">
+      <input class="inputname" value="{{nameedit}}" maxlength="16" placeholder="少侠请留名" bindinput="bindKeyInput"/>
+      <button class="btn-style" bindtap="submitrank">确定</button>
+    </view>
+    <button class="btn-style" bindtap="clickAgain">再试一次</button>
+  </view>
+
+ <view class="table">      
+    <block wx:for="{{listData}}" wx:for-index="index" wx:key="{{id}}">  
+      <view class="tr">    
+        <view class="tdnumber">{{index+1}}</view>  
+        <image class="td-userinfo-avatar" src="{{item.imgurl}}" background-size="cover"></image>
+        <view class="tdname">{{item.name}}</view>      
+        <view class="tdtime">{{item.time}}</view>  
+      </view>
+      <view class="tdsplit"></view>         
+    </block>
+  </view>
+</view>

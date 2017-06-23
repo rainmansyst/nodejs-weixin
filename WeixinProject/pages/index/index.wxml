@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container" style="background: #49474A; height: 100vh">
+  <button bindtap="clickJoin" class="btn-join">挑战一下</button>    
+  
+  <view class="table">  
+    <view class="th">    
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>   
+    </view>     
+    <block wx:for="{{listData}}" wx:for-index="index" wx:key="{{id}}">  
+      <view class="tr">    
+        <view class="tdnumber">{{index+1}}</view>  
+        <image class="td-userinfo-avatar" src="{{item.imgurl}}" background-size="cover"></image>
+        <view class="tdname">{{item.name}}</view>      
+        <view class="tdtime">{{item.time}}</view>  
+      </view>
+      <view class="thsplit">
+      <view class="tdsplit"></view>
+      </view>         
+    </block>
+  </view>
+
+</view>

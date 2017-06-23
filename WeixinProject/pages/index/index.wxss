@@ -1,0 +1,81 @@
+/**index.wxss**/
+.bkgview {
+  background: #49474A;
+}
+
+.btn-join{
+    height: 90rpx;
+    background-color: #FFFFFF;   
+    font-family: "微软雅黑";
+ }
+
+.table {  
+  border-radius: 2%;
+  border: 0px solid darkgray;
+  width:95%;
+  margin: 100rpx 5rpx 5rpx 5rpx; 
+  background: #EEECEF;  
+}
+
+.th {  
+  width: 100%;  
+  justify-content: center;  
+  display: flex;  
+  height: 3rem;  
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  margin-bottom: 70rpx;
+  border-radius: 50%;
+  align-items: center; 
+}
+
+.tr {  
+  display: flex;  
+  width: 100%;  
+  height: 2rem;  
+  align-items: center;
+  margin: 5rpx 5rpx 5rpx 5rpx;
+}
+.tdnumber {    
+  width:10%;    
+  justify-content: left;    
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.td-userinfo-avatar { 
+  width:50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  border: 0 solid #E6F3F9;
+}
+.tdname {    
+  width:30%;    
+  justify-content: center;    
+  text-align: center;
+  font-family: "微软雅黑";
+  color: darkgrey; 
+}
+.tdtime {     
+  font-family: "微软雅黑"; 
+  width:30%;    
+  justify-content: center;    
+  text-align: right;
+}
+.thsplit {  
+  width: 100%;  
+  justify-content: center;  
+  display: flex;  
+  height: 3rpx;  
+  align-items: center;
+}
+.tdsplit {
+  background: aquamarine;
+  height: 3rpx;
+  width: 95%;
+  align-items: center; 
+  justify-content: space-around;
+  display: flex;
+}
